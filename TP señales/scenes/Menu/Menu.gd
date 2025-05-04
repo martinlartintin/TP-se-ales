@@ -9,6 +9,8 @@ var instancesCount = 0
 @onready var violet_generator = $VioletGenerator
 
 func _ready():
+	add_to_group("blocks")
+	
 	$CountLabel.text = INSTANCES_TEXT + str(instancesCount)
 
 	red_generator.connect("button_down", Callable(self, "count_new_instance"))
