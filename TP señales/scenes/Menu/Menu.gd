@@ -5,6 +5,8 @@ const INSTANCES_TEXT = "Cantidad de instancias: "
 var instancesCount = 0
 
 @onready var count_label = $CountLabel
+@onready var red_generator = $RedGenerator
+@onready var violet_generator = $VioletGenerator
 
 func _ready():
 	$CountLabel.text = INSTANCES_TEXT + str(instancesCount)
